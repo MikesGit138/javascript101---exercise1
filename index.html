@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+</head>
+<body>
+	<h1>Simple Math Calculate</h1>
+	<div>
+		<label>Enter first number</label>
+		<input type="number" name="" id="a">
+	</div>
+	<label>Operator</label>
+<select id="operands">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">x</option>
+  <option value="/">/</option>
+</select>
+	<div>
+		<label>Enter second number</label>
+		<input type="number" name="" id="b">
+	</div>
+	<button onclick="simpleMath()">Calculate</button>
+	<p>Value is: <span id="value"></span></p>
+
+	<br><br>
+
+	<h1>Calculate Area of a Rectangle</h1>
+	<div>
+		<label>Enter Width</label>
+		<input type="number" name="" id="width">
+	</div>
+	<div>
+		<label>Enter Height</label>
+		<input type="number" name="" id="height">
+	</div>
+	<button onclick="areaRect()">Calculate</button>
+	<p>Value is: <span id="area"></span></p>
+
+	<br><br>
+
+
+	<h1>Calculate area of a circle with diameter</h1>
+	<div>
+		<label>Enter diameter</label>
+		<input type="number" id="diameter">
+	</div>
+	<button onclick="areaWD()">Calculate</button>
+	<p>Value is: <span id="area-w-d"></span></p>
+	
+	<br><br>
+
+	<h1>Calculate area of a circle with radius</h1>
+	<div>
+		<label>Enter radius</label>
+		<input type="number" id="radius">
+	</div>
+	<button onclick="areaWR()">Calculate</button>
+	<p>Value is: <span id="area-w-r"></span></p>
+
+<br><br>
+
+<h1>Calcuate area of a circle with circumference</h1>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
