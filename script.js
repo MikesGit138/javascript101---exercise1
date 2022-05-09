@@ -46,3 +46,9 @@ function areaWR(){
 	const area = radius * radius * Math.PI
 	document.getElementById('area-w-r').textContent = area
 }
+
+function areaWC(){
+	const circum = document.getElementById('circum').valueAsNumber
+	const area = (circum * circum) / (4 * Math.PI)
+	document.getElementById('area-w-c').textContent = area
+}
