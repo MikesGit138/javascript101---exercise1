@@ -7,7 +7,9 @@ function simpleMath(){
 	b = document.getElementById('b').valueAsNumber
 	sign = document.getElementById('operands').value
 	retval = doSimpleMath(a, b, sign)
+	const rounded = Math.round(retval)
 	document.getElementById('value').textContent = retval
+	document.getElementById('round-value').textContent = rounded
 	doSimpleMath()
 }
 
@@ -42,6 +44,7 @@ function areaWD(){
 	const area = diameter * Math.PI
 	const rounded = Math.round(area)
 	document.getElementById('area-w-d').textContent = area
+	document.getElementById('round-w-d').textContent = rounded
 }
 
 function areaWR(){
@@ -49,6 +52,7 @@ function areaWR(){
 	const area = radius * radius * Math.PI
 	const rounded = Math.round(area)
 	document.getElementById('area-w-r').textContent = area
+	document.getElementById('round-w-r').textContent = rounded
 }
 
 function areaWC(){
@@ -56,4 +60,5 @@ function areaWC(){
 	const area = (circum * circum) / (4 * Math.PI)
 	const rounded = Math.round(area)
 	document.getElementById('area-w-c').textContent = area
+	document.getElementById('round-w-c').textContent = rounded
 }
